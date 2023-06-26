@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairin Daniela Á</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+  
+</head>
+<body> 
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="nombre">Mairin Daniela Á.</h1>
+      <div class="nav_items" id="_items">
+            <a href="#inicio" class="active">Inicio</a>
+             <a href="#contacto" class="contact">Contacto</a>
+             <img src="./imagenes/moon.png" class="moon light" />
+        </div>
+        <div class="nav_toggle" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+   </nav>
+
+  </header>
+
+   <main>
+    <section class="inicio" id="inicio">
+      <img src="./imagenes/mifoto.png" class="mifoto" />
+      <div class="yo">
+        <h1 class="hola">Hola! Soy Mairin  Alvarez</h1>
+        <p class="miDescripcion">
+          Me gustan los retos, estar en constante aprendizaje y plantearme
+          nuevos desafios que me permitan ampliar mis horizontes dada mi
+          capacidad de adaptarme rápido ante las circunstancias. Soy amante
+          a la música, el voleibol y el ciclismo. Me gusta la competencia
+          sana porque nos lleva a apreciar límites de los que no creíamos
+          poder llegar.
+        </p>
+        <a href="#" class="btn" download="#">Descargar mi CV</a>
+      </div>
+    </section>
+    <section class="contacto" id="contacto">
+      <h2 class="hablemos">Hablemos</h2>
+      <form action="#" name="formDatosPersonales" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Escribe tu nombre"
+        />
+
+        <label for="apellidos">Apellidos:</label>
+        <input
+          type="text"
+          name="apellidos"
+          id="apellidos"
+          placeholder="1r Apellido"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email"
+          required
+        />
+
+        <label for="asunto">Asunto:</label>
+        <input
+          type="text"
+          name="asunto"
+          id="asunto"
+          placeholder="titular de la consulta"
+        />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea
+          name="mensaje"
+          for="mensaje"
+          placeholder="describe brevemente en menos de 300 carácteres"
+          maxlength="300"
+        ></textarea>
+
+        <input
+          type="submit"
+          name="enviar"
+          value="enviar datos"
+          class="btnForm"
+        />
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <h4 class="nombreFooter">
+      Mairin Daniela Álvarez
+      <span class="correo"> <br />danydanyalv@gmail.com</span>
+    </h4>
+    <div class="redesSociales">
+      <a href="https://www.linkedin.com/in/mairin-alvarez-aa595b91/" target="_blank"
+        ><i class="bx bxl-linkedin-square"></i
+      ></a>
+      <a href="https://github.com/zhodany/" target="_blank">
+        <i class="bx bxl-github"></i
+      ></a>
+    </div>
+  </footer>
+   <script src="./scripts/script.js"></script>
+   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

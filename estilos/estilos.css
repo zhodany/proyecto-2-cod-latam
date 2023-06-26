@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+
+/* Estilos generales */
+:root{
+  --colortexto:#8b8a8a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fffefe;
+  color: var(--colortexto) ;
+ 
+}
+
+/* Estilos del encabezado */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:#f3a476;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  padding: 1rem 3%;
+  border-bottom: 3px solid rgb(237, 240, 104);
+  z-index: 100;
+}
+.navbar{
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+.nav_items img{
+  width: 2rem;
+  height: 2rem;
+text-align: center;
+}
+body.darkmode{
+  background-color: black ;
+  color: white;
+}
+
+.moon {
+  cursor: pointer;
+  height: 1.2rem;
+  margin: 0 2rem;
+}
+.nombre {
+  font-size: 2.2rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+ color: white;
+  text-decoration: none;
+}
+.light{
+  background-image: url('../imagenes/sun.png');
+}
+#menu-icon{
+  font-size: 2.3rem;
+   display: none; 
+ }
+
+/* Estilos del contenido principal */
+.inicio {
+  margin-top: 5rem;
+
+  padding: 1rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mifoto {
+  width: 30%;
+  height: auto;
+  padding-top: 3.3rem;
+}
+.yo h1 {
+  font-size: 3rem;
+}
+.hola {
+  font-family: "Titan One", cursive;
+
+  border: none;
+}
+.miDescripcion {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  
+}
+.contacto {
+  display: flex;
+  height: 85vh;
+
+  padding-top: 7rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  width: 12rem;
+  height: 3rem;
+  background-color:#272626;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.hablemos {
+  font-family: "Titan One", cursive;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+ 
+}
+form {
+  width: 80%;
+  height: 70%;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color:#272626;
+}
+
+form label {
+  width: 72px;
+  font-weight:normal;
+  display: inline-block;
+  color: white;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 40%;
+
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
+}
+.btnForm {
+  width: 7.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+.footer {
+  display:flex;
+  width: 100%;
+  height: 4rem;
+  background-color:#faa37a;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  
+}
+.redesSociales i {
+  font-size: 2.2rem;
+  margin-right:1.5rem;
+  
+  
+}
+.nombreFooter {
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+ 
+  text-decoration: none;
+  line-height: 1.3rem;
+}
+.correo {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 0;
+}
+.bx{
+  color:var(--colortexto);
+}
+/* responsive */
+@media (max-width: 680px) {
+  
+  .header {
+    justify-content: space-between;
+    padding: 1rem 3%;
+  }
+
+  .header .nombre {
+    font-size: 1rem;
+  }
+  .navbar{
+    position: fixed;
+     width: 90%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 1rem;
+  } 
+ 
+  .nav_items{
+    position: absolute;
+    top: 71px;
+    left: -36px;
+    background: #c2bbbb;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+    align-items: center;
+}
+  .navbar a {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-align: center;
+    margin: 15px;
+  }
+  .nav_toggle{
+    display: flex !important;
+    flex-direction: column;                
+    margin: 15px;
+} 
+.nav_toggle span{
+  width: 30px;
+  height: 4px;
+  background: white;
+  margin-bottom: 5px;
+  border-radius: 2px;             
+  transform-origin: 5px 0px;
+  transition: all 0.2s linear;
+}
+.close span{
+  transform: rotate(45deg) translate(0px, 0px);
+}
+.close span:nth-child(2){
+  display: none;
+}
+.close span:nth-child(3){
+  transform: rotate(-45deg) translate(-5px, 1px);
+}
+.open{ transform: translateX(0) !important}
+  .mifoto {
+    width: 70%;
+    height: auto;
+  }
+  .inicio {
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(102, 167, 145);
+  }
+  .miDescripcion {
+    padding-top: 2.5rem;
+  }
+
+ form {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+  form label,
+  form input[type="text"],
+  form input[type="email"] {
+    width: 95%;
+  }
+
+  .footer {
+    height: 6.3rem;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between;
+    color: #e7baba;
+  }
+  .nombreFooter {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 0.7rem;
+  }
+ 
+  .redesSociales{
+    display: flex;
+    padding-right: 2rem;
+    color: #ce8686;
+  }
+}
